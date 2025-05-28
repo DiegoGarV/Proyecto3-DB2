@@ -1,6 +1,6 @@
-#Proyecto 3 Base de Datos #2
+# Proyecto 3 Base de Datos #2
 
-##Integrantes
+## Integrantes
 José Joaquín Campos - 22155 
 
 
