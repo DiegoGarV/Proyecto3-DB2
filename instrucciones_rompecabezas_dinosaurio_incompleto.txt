@@ -1,16 +1,24 @@
 Empieza por la cabeza a la izquierda
 
 Inicia desde la pieza 4
-Continua colocando la pieza 5 al Este de la pieza 4, conectando del hembra de derecha del 4 al macho del 5
+Continua colocando la pieza 3 al Oeste de la pieza 4, conectando del macho de izquierda del 4 al hembra del 3
+Deja un espacio porque acá iría la pieza 5
 Continua colocando la pieza 6 al Este de la pieza 4, conectando del hembra de derecha del 4 al macho del 6
-Continua colocando la pieza 2 al Sur de la pieza 1, conectando del hembra de abajo del 1 al macho del 2
-Continua colocando la pieza 3 al Oeste de la pieza 1, conectando del hembra de abajo del 1 al macho del 3
-Continua colocando la pieza 3 al Sur de la pieza 2, conectando del hembra de abajo del 2 al macho del 3
+Continua colocando la pieza 2 al Norte de la pieza 3, conectando del macho de arriba del 3 al hembra del 2
 Continua colocando la pieza 4 al Este de la pieza 3, conectando del hembra de derecha del 3 al macho del 4
-Continua colocando la pieza 6 al Sur de la pieza 5, conectando del hembra de abajo del 5 al macho del 6
-Continua colocando la pieza 7 al Este de la pieza 5, conectando del hembra de derecha del 5 al macho del 7
+Continua colocando la pieza 4 al Oeste de la pieza 6, conectando del macho de izquierda del 6 al hembra del 4
+Deja un espacio porque acá iría la pieza 5
 Continua colocando la pieza 8 al Este de la pieza 6, conectando del hembra de derecha del 6 al macho del 8
+Continua colocando la pieza 1 al Norte de la pieza 2, conectando del macho de arriba del 2 al hembra del 1
+Continua colocando la pieza 3 al Sur de la pieza 2, conectando del hembra de abajo del 2 al macho del 3
+Continua colocando la pieza 6 al Oeste de la pieza 8, conectando del macho de izquierda del 8 al hembra del 6
+Continua colocando la pieza 7 al Norte de la pieza 8, conectando del macho de arriba del 8 al hembra del 7
+Continua colocando la pieza 9 al Este de la pieza 8, conectando del hembra de derecha del 8 al macho del 9
+Continua colocando la pieza 2 al Sur de la pieza 1, conectando del hembra de abajo del 1 al macho del 2
+Deja un espacio porque acá iría la pieza 5
 Continua colocando la pieza 8 al Sur de la pieza 7, conectando del hembra de abajo del 7 al macho del 8
 Continua colocando la pieza 9 al Este de la pieza 7, conectando del hembra de derecha del 7 al macho del 9
-Continua colocando la pieza 9 al Este de la pieza 8, conectando del hembra de derecha del 8 al macho del 9
+Continua colocando la pieza 7 al Oeste de la pieza 9, conectando del macho de izquierda del 9 al hembra del 7
+Continua colocando la pieza 8 al Oeste de la pieza 9, conectando del macho de izquierda del 9 al hembra del 8
 Continua colocando la pieza 10 al Este de la pieza 9, conectando del hembra de derecha del 9 al macho del 10
+Continua colocando la pieza 9 al Oeste de la pieza 10, conectando del macho de izquierda del 10 al hembra del 9
