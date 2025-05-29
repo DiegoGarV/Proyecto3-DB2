@@ -1,0 +1,6 @@
+Empieza por la cabeza a la izquierda
+
+Inicia desde la pieza 6
+Continua colocando la pieza 8 al Este de la pieza 6, conectando del hembra de derecha del 6 al macho del 8
+Continua colocando la pieza 9 al Este de la pieza 8, conectando del hembra de derecha del 8 al macho del 9
+Continua colocando la pieza 10 al Este de la pieza 9, conectando del hembra de derecha del 9 al macho del 10

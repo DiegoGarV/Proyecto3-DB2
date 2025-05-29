@@ -35,7 +35,7 @@ def cargar_rompecabezas(tx, data):
 def main():
     with driver.session() as session:
         for puzzle in rompecabezas_data:
-            session.write_transaction(cargar_rompecabezas, puzzle)
+            session.execute_write(cargar_rompecabezas, puzzle)
 
     print("¡Rompecabezas cargados correctamente!")
     close_driver()
