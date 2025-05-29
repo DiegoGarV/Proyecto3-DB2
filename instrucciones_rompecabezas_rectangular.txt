@@ -1,0 +1,6 @@
+Armar de izquierda a derecha
+
+Inicia desde la pieza 2
+Continua colocando la pieza 3 al E de la pieza 2, conectando del hembra del 2 al macho del 3
+Continua colocando la pieza 1 al O de la pieza 2, conectando del hembra del 2 al macho del 1
+Continua colocando la pieza 2 al E de la pieza 1, conectando del macho del 1 al hembra del 2

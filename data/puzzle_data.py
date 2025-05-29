@@ -6,13 +6,13 @@ rompecabezas_data = [
         "piezas": [
             {"id": 1, "estado": True},
             {"id": 2, "estado": True},
-            {"id": 3, "estado": False},  # pieza faltante
+            {"id": 3, "estado": False},
         ],
         "conexiones": [
             {
                 "desde": 1,
                 "hacia": 2,
-                "direccion": "E",
+                "direccion": "Este",
                 "desde_tipo": "macho",
                 "hacia_tipo": "hembra",
                 "entrada": "unica"
@@ -20,7 +20,15 @@ rompecabezas_data = [
             {
                 "desde": 2,
                 "hacia": 3,
-                "direccion": "E",
+                "direccion": "Este",
+                "desde_tipo": "hembra",
+                "hacia_tipo": "macho",
+                "entrada": "unica"
+            },
+            {
+                "desde": 2,
+                "hacia": 1,
+                "direccion": "Oeste",
                 "desde_tipo": "hembra",
                 "hacia_tipo": "macho",
                 "entrada": "unica"
@@ -40,7 +48,7 @@ rompecabezas_data = [
             {
                 "desde": 1,
                 "hacia": 2,
-                "direccion": "O_arriba",
+                "direccion": "Oeste",
                 "desde_tipo": "hembra",
                 "hacia_tipo": "macho",
                 "entrada": "arriba"
@@ -48,7 +56,7 @@ rompecabezas_data = [
             {
                 "desde": 1,
                 "hacia": 3,
-                "direccion": "O_abajo",
+                "direccion": "Oeste",
                 "desde_tipo": "hembra",
                 "hacia_tipo": "macho",
                 "entrada": "abajo"
