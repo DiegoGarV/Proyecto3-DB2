@@ -2,6 +2,8 @@
 
 ## Integrantes
 José Joaquín Campos - 22155 
+Pablo Cesar Lopez - 22535
+Diego Garcia - 22404
 
 
 ## Enalaces 
