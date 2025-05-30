@@ -95,6 +95,7 @@ def ensamblar_rompecabezas(pieza_id, rompecabezas_nombre):
         close_driver()
         return ensambladas
 
+
 def ensamblar_rompe_piezasperdidas(pieza_id, rompecabezas_nombre, piezas_faltantes):
     pieza_id = int(pieza_id)
     piezas_faltantes = set(map(int, piezas_faltantes))
@@ -126,23 +127,21 @@ def ensamblar_rompe_piezasperdidas(pieza_id, rompecabezas_nombre, piezas_faltant
                    r.entrada AS entrada
         """, nombre=nombre_rompecabezas)
 
-        # Construir grafo de conexiones
+        # Construcción del grafo
         grafo = {}
-        relaciones = []
         for record in resultado:
             desde = int(record["desde_id"])
             hacia = int(record["hacia_id"])
-            relaciones.append(record)
             if desde not in grafo:
                 grafo[desde] = []
             grafo[desde].append((hacia, record))
 
-        # Iniciar BFS desde pieza inicial
+        # BFS ampliado
         instrucciones = [f"Inicia desde la pieza {pieza_id}"]
         visitadas = set()
-        cola = [pieza_id]
         conexiones_vistas = set()
         ensambladas = set()
+        cola = [pieza_id]
 
         while cola:
             actual = cola.pop(0)
@@ -151,19 +150,38 @@ def ensamblar_rompe_piezasperdidas(pieza_id, rompecabezas_nombre, piezas_faltant
             visitadas.add(actual)
 
             for hacia, record in grafo.get(actual, []):
-                if (actual, hacia) in conexiones_vistas:
+                par_directo = (actual, hacia)
+                par_inverso = (hacia, actual)
+                if par_directo in conexiones_vistas or par_inverso in conexiones_vistas:
                     continue
-                conexiones_vistas.add((actual, hacia))
+                conexiones_vistas.add(par_directo)
 
+                entrada = record["entrada"] or "unica"
+                detalle_conexion = (
+                    f"conectando del {record['desde_tipo']} "
+                )
+                if entrada != "unica":
+                    detalle_conexion += f"de {entrada} "
+                detalle_conexion += f"del {actual} al {record['hacia_tipo']} del {hacia}"
+
+                # Piezas faltantes
                 if actual in piezas_faltantes:
-                    instrucciones.append(f"Deja un espacio porque acá iría la pieza {actual}")
+                    instrucciones.append(
+                        f"Deja un espacio porque acá iría la pieza {actual}, {detalle_conexion}"
+                    )
+                    if hacia not in visitadas:
+                        cola.append(hacia)
                     continue
 
                 if hacia in piezas_faltantes:
-                    instrucciones.append(f"Deja un espacio porque acá iría la pieza {hacia}")
+                    instrucciones.append(
+                        f"Deja un espacio porque acá iría la pieza {hacia}, {detalle_conexion}"
+                    )
+                    if hacia not in visitadas:
+                        cola.append(hacia)
                     continue
 
-                entrada = record["entrada"] or "unica"
+                # Construcción de paso normal
                 paso = (
                     f"Continua colocando la pieza {hacia} al {record['direccion']} "
                     f"de la pieza {actual}, conectando del {record['desde_tipo']} "
@@ -175,10 +193,11 @@ def ensamblar_rompe_piezasperdidas(pieza_id, rompecabezas_nombre, piezas_faltant
                 instrucciones.append(paso)
                 ensambladas.add(actual)
                 ensambladas.add(hacia)
+
                 if hacia not in visitadas:
                     cola.append(hacia)
 
-        # Guardar archivo de instrucciones
+        # Escritura en archivo
         filename = f"instrucciones_{nombre_rompecabezas.lower().replace(' ', '_')}_incompleto.txt"
         with open(filename, "w", encoding="utf-8") as f:
             f.write(f"{instrucciones_generales}\n\n")

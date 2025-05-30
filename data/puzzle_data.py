@@ -178,5 +178,78 @@ rompecabezas_data = [
                 "entrada": "derecha"
             },
         ],
+    },
+    {
+        "nombre": "Rompecabezas Patito",
+        "forma": "Patito",
+        "instrucciones": "Dejar los numeros en la orientacion correcta desde tu perspectiva",
+        "piezas": [
+            {"id": 1, "estado": True},
+            {"id": 2, "estado": True},
+            {"id": 3, "estado": True},
+            {"id": 4, "estado": True},
+            {"id": 5, "estado": True},
+            {"id": 6, "estado": True},
+            {"id": 7, "estado": True}
+        ],
+        "conexiones": [
+            {
+                "desde": 1,
+                "hacia": 2,
+                "direccion": "Sur",
+                "desde_tipo": "macho",
+                "hacia_tipo": "hembra",
+                "entrada": "abajo"
+            },
+            {
+                "desde": 2,
+                "hacia": 3,
+                "direccion": "Este",
+                "desde_tipo": "macho",
+                "hacia_tipo": "hembra",
+                "entrada": "derecha"
+            },
+            {
+                "desde": 2,
+                "hacia": 4,
+                "direccion": "Sur",
+                "desde_tipo": "macho",
+                "hacia_tipo": "hembra",
+                "entrada": "abajo"
+            },
+            {
+                "desde": 7,
+                "hacia": 4,
+                "direccion": "Norte",
+                "desde_tipo": "macho",
+                "hacia_tipo": "hembra",
+                "entrada": "a la izquierda"
+            },
+            {
+                "desde": 7,
+                "hacia": 5,
+                "direccion": "Norte",
+                "desde_tipo": "hembra",
+                "hacia_tipo": "macho",
+                "entrada": "en medio"
+            },
+            {
+                "desde": 7,
+                "hacia": 6,
+                "direccion": "Norte",
+                "desde_tipo": "hembra",
+                "hacia_tipo": "macho",
+                "entrada": "derecha"
+            },
+            {
+                "desde": 6,
+                "hacia": 3,
+                "direccion": "Este",
+                "desde_tipo": "hembra",
+                "hacia_tipo": "macho",
+                "entrada": "izquierda"
+            },
+        ],
+        
     }
 ]

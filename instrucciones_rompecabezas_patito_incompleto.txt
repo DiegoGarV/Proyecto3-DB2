@@ -1,0 +1,10 @@
+Dejar los numeros en la orientacion correcta desde tu perspectiva
+
+Inicia desde la pieza 7
+Continua colocando la pieza 4 al Norte de la pieza 7, conectando del macho de a la izquierda del 7 al hembra del 4
+Continua colocando la pieza 5 al Norte de la pieza 7, conectando del hembra de en medio del 7 al macho del 5
+Continua colocando la pieza 6 al Norte de la pieza 7, conectando del hembra de derecha del 7 al macho del 6
+Continua colocando la pieza 2 al Norte de la pieza 4, conectando del hembra de arriba del 4 al macho del 2
+Deja un espacio porque acá iría la pieza 3, conectando del hembra de izquierda del 6 al macho del 3
+Continua colocando la pieza 1 al Norte de la pieza 2, conectando del hembra de arriba del 2 al macho del 1
+Deja un espacio porque acá iría la pieza 3, conectando del macho de derecha del 2 al hembra del 3
